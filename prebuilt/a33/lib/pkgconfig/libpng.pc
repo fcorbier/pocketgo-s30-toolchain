@@ -1,0 +1,11 @@
+zk_prefix=/home/cthibault/Development/pocketgo-s30/prebuilt/a33
+exec_prefix=${zk_prefix}
+libdir=${exec_prefix}/lib
+includedir=${zk_prefix}/include/libpng12
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.2.56
+Libs: -L${libdir} -lpng12
+Libs.private: -lz -lm 
+Cflags: -I${includedir} 

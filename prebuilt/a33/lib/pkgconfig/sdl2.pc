@@ -1,0 +1,13 @@
+zk_prefix=/home/cthibault/Development/pocketgo-s30/prebuilt/a33
+exec_prefix=${zk_prefix}
+libdir=${exec_prefix}/lib
+includedir=${zk_prefix}/include
+
+Name: sdl2
+Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Version: 2.0.10
+Requires:
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -Wl,--enable-new-dtags -lSDL2
+Libs.private: -lSDL2  -Wl,--no-undefined -lm -lGLESv2 -ldl -lpthread
+Cflags: -I${includedir}/SDL2  -D_REENTRANT

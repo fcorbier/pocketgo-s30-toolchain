@@ -1,0 +1,13 @@
+zk_prefix=/home/cthibault/Development/pocketgo-s30/prebuilt/a33
+exec_prefix=${zk_prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${zk_prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

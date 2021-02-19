@@ -1,0 +1,14 @@
+zk_prefix=/home/cthibault/Development/pocketgo-s30/prebuilt/a33
+exec_prefix=${zk_prefix}
+libdir=${exec_prefix}/lib
+includedir=${zk_prefix}/include/freetype2
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 17.4.11
+Requires:
+Requires.private: zlib
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}

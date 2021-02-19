@@ -1,0 +1,12 @@
+zk_prefix=/home/cthibault/Development/pocketgo-s30/prebuilt/a33
+exec_prefix=${zk_prefix}
+libdir=${exec_prefix}/lib
+includedir=${zk_prefix}/include
+
+Name: glesv2
+Description: ARM Mali implementation of OpenGL ESv2
+Version: 2.0
+Requires:
+Libs: -L${libdir} -lGLESv2
+Cflags: -I${includedir}
+
